@@ -20,5 +20,15 @@ nav {
   border-color: #ecf1ff;
   color: #ecf1ff;
   background-color: black;
+  font-size: 1.5rem;
+  min-height: 4rem;
+}
+
+.firstSection h1 {
+  font-size: 6rem;
+}
+
+.firstSection p {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */

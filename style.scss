@@ -1,0 +1,19 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+@import 'fonts.scss';
+@import 'firstSection.scss';
+
+
+
+// первый блок
+nav{
+    background-color: aquamarine;
+    width: 45vw ;
+}
+header{
+}

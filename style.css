@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Eurostyle MN';
+  src: url("./fonts/eurostile-mn-extended-bold.ttf");
+}
+
+nav {
+  background-color: aquamarine;
+  width: 45vw;
+}
+/*# sourceMappingURL=style.css.map */

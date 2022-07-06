@@ -12,8 +12,14 @@
 
 // первый блок
 nav{
-    background-color: aquamarine;
-    width: 45vw ;
+ 
+    // width: 45vw ;
+    a{
+        font-family: "Eurostyle MN";
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
 }
 header{
 }
@@ -28,6 +34,7 @@ header{
     border-bottom-left-radius: 70% 10%;
     border-bottom-right-radius: 70% 10%;
     button{
+        margin-top: 2rem;
         border-width: 3px;
         border-color: rgba(236, 241, 255, 1);
         color: rgba(236, 241, 255, 1);
@@ -43,6 +50,8 @@ header{
     }
     p{
         font-size: 1.8rem;
+        color: white;
+        font-family: 'Codec Pro Bold';
     }
 }
 
@@ -59,4 +68,64 @@ header{
 
 .secondSection{
 
+    h2{
+        font-size: 3rem;
+        font-family: 'Eurostyle MN';
+    }
+    p{
+        font-size: 1.4rem;
+        font-family: 'Codec Pro';
+    }
+    margin-bottom: 140px;
+}
+
+.thirdSection{
+    h2{
+        font-family: "Eurostyle MN";
+        font-size: 3rem;
+    }
+    p{
+        font-family: "Codec Pro Bold";
+        font-size: 1.4rem; 
+    }
+    h3{
+        font-family: "Eurostyle MN";
+        font-size: 1.4rem; 
+    }
+    margin-bottom: 140px;
+}
+.fourSection{
+  background-color: rgba(236, 241, 255, 1);
+    .logoBlock{
+        text-align: center;
+    }
+    h2{
+        font-family: "Eurostyle MN";
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    h3{
+        font-family: "Eurostyle MN";
+        font-size: 1.4rem; 
+    }
+    p{
+        font-family: "Codec Pro";
+        font-size: 1.4rem; 
+    }
+    margin-bottom: 140px;
+}
+.fiveSection{
+    h2{
+        font-family: "Eurostyle MN";
+        font-size: 3rem;
+        margin-bottom: 3.5rem;
+    }
+    h3{
+        font-family: "Eurostyle MN";
+        font-size: 1.4rem; 
+    }
+    p{
+        font-family: "Codec Pro";
+        font-size: 1.4rem; 
+    }
 }

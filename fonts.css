@@ -7,4 +7,39 @@
   font-family: 'CeraPro-Black';
   src: url("./fonts/CeraPro-Black.ttf");
 }
+
+@font-face {
+  font-family: 'Codec Pro';
+  src: url("./fonts/FontsFree-Net-CodecPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Codec Pro Bold';
+  src: url("./fonts/CodecPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'CeraPro Black';
+  src: url("./fonts/CeraPro-Black.ttf");
+}
+
+@font-face {
+  font-family: 'CeraPro Bold';
+  src: url("./fonts/CeraPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'CeraPro Medium';
+  src: url("./fonts/CeraPro-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'GoshaSans Bold';
+  src: url("./fonts/GoshaSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'GoshaSans Regular';
+  src: url("./fonts/GoshaSans-Regular.ttf");
+}
 /*# sourceMappingURL=fonts.css.map */

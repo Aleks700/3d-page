@@ -14,4 +14,11 @@ nav {
   background-color: aquamarine;
   width: 45vw;
 }
+
+.firstSection button {
+  border-width: 3px;
+  border-color: #ecf1ff;
+  color: #ecf1ff;
+  background-color: black;
+}
 /*# sourceMappingURL=style.css.map */

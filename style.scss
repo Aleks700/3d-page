@@ -19,6 +19,14 @@ header{
 }
 
 .firstSection{
+    text-align: center;
+    background-color: rgba(236, 241, 255, 1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top-left-radius: 70% 10%;
+    border-top-right-radius: 70% 10%;
+    border-bottom-left-radius: 70% 10%;
+    border-bottom-right-radius: 70% 10%;
     button{
         border-width: 3px;
         border-color: rgba(236, 241, 255, 1);
@@ -26,14 +34,28 @@ header{
         background-color: black;
         font-size: 1.5rem;
         min-height: 4rem;
+
     }
     h1{
+        font-family: 'Eurostyle MN';
+        color: rgba(112, 148, 254, 1);
         font-size: 6rem;
     }
     p{
         font-size: 1.8rem;
     }
 }
+
+.blueContainer{
+    background-color: black;
+    padding-top: 10px;
+    border-top-left-radius: 70% 10%;
+    border-top-right-radius: 70% 10%;
+    border-bottom-left-radius: 70% 10%;
+    border-bottom-right-radius: 70% 10%;
+    padding-bottom: 5vh;
+}
+
 
 .secondSection{
 

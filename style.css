@@ -10,9 +10,25 @@
   src: url("./fonts/eurostile-mn-extended-bold.ttf");
 }
 
+@font-face {
+  font-family: 'CeraPro-Black';
+  src: url("./fonts/CeraPro-Black.ttf");
+}
+
 nav {
   background-color: aquamarine;
   width: 45vw;
+}
+
+.firstSection {
+  text-align: center;
+  background-color: #ecf1ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top-left-radius: 70% 10%;
+  border-top-right-radius: 70% 10%;
+  border-bottom-left-radius: 70% 10%;
+  border-bottom-right-radius: 70% 10%;
 }
 
 .firstSection button {
@@ -25,10 +41,22 @@ nav {
 }
 
 .firstSection h1 {
+  font-family: 'Eurostyle MN';
+  color: #7094fe;
   font-size: 6rem;
 }
 
 .firstSection p {
   font-size: 1.8rem;
+}
+
+.blueContainer {
+  background-color: black;
+  padding-top: 10px;
+  border-top-left-radius: 70% 10%;
+  border-top-right-radius: 70% 10%;
+  border-bottom-left-radius: 70% 10%;
+  border-bottom-right-radius: 70% 10%;
+  padding-bottom: 5vh;
 }
 /*# sourceMappingURL=style.css.map */

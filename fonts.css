@@ -2,4 +2,9 @@
   font-family: 'Eurostyle MN';
   src: url("./fonts/eurostile-mn-extended-bold.ttf");
 }
+
+@font-face {
+  font-family: 'CeraPro-Black';
+  src: url("./fonts/CeraPro-Black.ttf");
+}
 /*# sourceMappingURL=fonts.css.map */

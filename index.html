@@ -15,9 +15,8 @@
             <div class="col-md-1">
                 <img src="./img/Logo.svg" alt="logo" class="img-fluid"></img>
             </div>
-           
             <div class="col-md-11">
-                <nav class = 'offset-md-3 col-md-7'> 
+                <nav class = 'offset-md-3 col-md-7 d-flex justify-content-between'> 
                     <a href="#">Technology</a>
                     <a  href="#">Applications</a>
                     <a  href="#">Procedure</a>
@@ -39,19 +38,18 @@
             </div>
         </div>
         </div>
-        
-      
     </section>
     <section class=" container secondSection " >
         <h2>Our Technology</h2>
-        <p>Fitsme Scan allows creation of decent textured models using regular iPhones or any other cheap LIDAR-equipped cameras after minor modification.</p>
-        <div></div>
+          <div class="col-md-7">
+            <p>Fitsme Scan allows creation of decent textured models using regular iPhones or any other cheap LIDAR-equipped cameras after minor modification.</p>
+          </div>
+          <div class="container canvasBlock"></div>
     </section>
     <section class="container thirdSection">
         <div class=' offset-md-2 col-md-8 text-center mb-5'>
             <h2>The system consists of three parts:</h2>
         </div>
-      
         <div class="d-flex">
             <div class="col-md-4 pe-4">
                 <h3>1.</h3><br>
@@ -104,16 +102,86 @@
                 <h2>Scanning procedure</h2>
             </div>
            
-            <div>
-                <div>
-                    <h3>Step 1</h3>
-                    <p>To scan an object put it on a turntable.</p>
+            <div class="row">
+                <div class="col-md-8 imageBlock">
+                    <img src="./img/Group 11409.png" alt="" class="img-fluid">
+                </div> 
+                <div class="col-md-4 textBlock d-flex ">
+                    <div class="offset-md-1 col-md-10 mt-5">
+                        <h1 class="d-none d-lg-block">1</h1>
+                        <h3 class="d-lg-none">Step 1</h3>
+                        <p>To scan an object put it on a turntable.</p>
+                    </div>
+                    
                 </div>
-                <img src="" alt="">
+                
+            </div>
+            <div class="row">
+              
+                <div class="col-md-4 textBlock d-flex ">
+                    <div class="offset-md-1 col-md-10 mt-5">
+                        <h1 class="d-none d-lg-block">2</h1>
+                        <h3 class="d-lg-none">Step 2</h3>
+                        <p>Mount your iPhone on a tripod and make sure the object is within the frame. Switch on the turntable, start scanning the object downloading a raw scan file into your workstation.</p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-8 imageBlock">
+                    <img src="./img/Camera.png" alt="" class="img-fluid">
+                </div> 
+                
+            </div>
+            <div class="row">
+                <div class="col-md-8 imageBlock">
+                    <img src="./img/Note.png" alt="" class="img-fluid">
+                </div> 
+                <div class="col-md-4 textBlock d-flex ">
+                    <div class="offset-md-1 col-md-10 mt-5">
+                        <h1 class="d-none d-lg-block">3</h1>
+                        <h3 class="d-lg-none">Step 3</h3>
+                        <p>Process the raw scan on your workstation and generate a compact 3D-model of the scanned object.</p>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
    
 
+    </section>
+    <section class="sixSection">
+        <div class="container d-flex">
+            <div class="col-md-6 pe-5">
+                <h1 class="col-md-11"> Feel free to contact us </h1>
+                <p>if you are considering partnering or acquiring a technology license</p>
+                <div class="d-flex">
+                    <img src="./img/logo/akar-icons_phone.png" alt="">
+                    <p> +47-910-00-587</p>
+                  
+                  
+                </div>
+                <div class="d-flex">
+                    <img src="./img/logo/ci_mail-open.png" alt="">
+                    <p>contact@fitsme.tech</p>
+                  
+                  
+                </div>
+
+      
+            </div>
+          
+            <div class="col-md-6 ">
+                <form action="" class="d-flex flex-column">
+                    <label for="name">Your name</label>
+                    <input type="text" name="name">
+                    <label for="email">Your email</label>
+                    <input type="text" name="email">
+                    <label for="message">Message</label>
+                    <textarea name="message"></textarea>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div> 
     </section>
 </body>
 </html>

@@ -1,131 +1,135 @@
-
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@import 'fonts.scss';
-@import 'firstSection.scss';
-
-
+@import "fonts.scss";
+@import "firstSection.scss";
 
 // первый блок
-nav{
- 
-    // width: 45vw ;
-    a{
-        font-family: "Eurostyle MN";
-        color: black;
-        text-decoration: none;
-        font-size: 1.5rem;
-    }
+nav {
+  // width: 45vw ;
+  a {
+    font-family: "Eurostyle MN";
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
 }
-header{
-}
-
-.firstSection{
-    text-align: center;
-    background-color: rgba(236, 241, 255, 1);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-top-left-radius: 70% 10%;
-    border-top-right-radius: 70% 10%;
-    border-bottom-left-radius: 70% 10%;
-    border-bottom-right-radius: 70% 10%;
-    button{
-        margin-top: 2rem;
-        border-width: 3px;
-        border-color: rgba(236, 241, 255, 1);
-        color: rgba(236, 241, 255, 1);
-        background-color: black;
-        font-size: 1.5rem;
-        min-height: 4rem;
-
-    }
-    h1{
-        font-family: 'Eurostyle MN';
-        color: rgba(112, 148, 254, 1);
-        font-size: 6rem;
-    }
-    p{
-        font-size: 1.8rem;
-        color: white;
-        font-family: 'Codec Pro Bold';
-    }
+header {
 }
 
-.blueContainer{
-    background-color: black;
-    padding-top: 10px;
-    border-top-left-radius: 70% 10%;
-    border-top-right-radius: 70% 10%;
-    border-bottom-left-radius: 70% 10%;
-    border-bottom-right-radius: 70% 10%;
-    padding-bottom: 5vh;
-}
-
-
-.secondSection{
-
-    h2{
-        font-size: 3rem;
-        font-family: 'Eurostyle MN';
-    }
-    p{
-        font-size: 1.4rem;
-        font-family: 'Codec Pro';
-    }
-    margin-bottom: 140px;
-}
-
-.thirdSection{
-    h2{
-        font-family: "Eurostyle MN";
-        font-size: 3rem;
-    }
-    p{
-        font-family: "Codec Pro Bold";
-        font-size: 1.4rem; 
-    }
-    h3{
-        font-family: "Eurostyle MN";
-        font-size: 1.4rem; 
-    }
-    margin-bottom: 140px;
-}
-.fourSection{
+.firstSection {
+  text-align: center;
   background-color: rgba(236, 241, 255, 1);
-    .logoBlock{
-        text-align: center;
-    }
-    h2{
-        font-family: "Eurostyle MN";
-        font-size: 3rem;
-        margin-bottom: 3.5rem;
-    }
-    h3{
-        font-family: "Eurostyle MN";
-        font-size: 1.4rem; 
-    }
-    p{
-        font-family: "Codec Pro";
-        font-size: 1.4rem; 
-    }
-    margin-bottom: 140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top-left-radius: 70% 10%;
+  border-top-right-radius: 70% 10%;
+  border-bottom-left-radius: 70% 10%;
+  border-bottom-right-radius: 70% 10%;
+  margin-bottom: 140px;
+  button {
+    margin-top: 2rem;
+    border-width: 3px;
+    border-color: rgba(236, 241, 255, 1);
+    color: rgba(236, 241, 255, 1);
+    background-color: black;
+    font-size: 1.5rem;
+    min-height: 4rem;
+  }
+  h1 {
+    font-family: "Eurostyle MN";
+    color: rgba(112, 148, 254, 1);
+    font-size: 6rem;
+  }
+  p {
+    font-size: 1.8rem;
+    color: white;
+    font-family: "Codec Pro Bold";
+  }
 }
-.fiveSection{
-    h2{
-        font-family: "Eurostyle MN";
-        font-size: 3rem;
-        margin-bottom: 3.5rem;
-    }
-    h3{
-        font-family: "Eurostyle MN";
-        font-size: 1.4rem; 
-    }
-    p{
-        font-family: "Codec Pro";
-        font-size: 1.4rem; 
-    }
+
+.blueContainer {
+  background-color: black;
+  padding-top: 10px;
+  border-top-left-radius: 70% 10%;
+  border-top-right-radius: 70% 10%;
+  border-bottom-left-radius: 70% 10%;
+  border-bottom-right-radius: 70% 10%;
+  padding-bottom: 5vh;
+}
+
+.secondSection {
+  h2 {
+    font-size: 3rem;
+    font-family: "Eurostyle MN";
+  }
+  p {
+    font-size: 1.4rem;
+    font-family: "Codec Pro";
+  }
+  margin-bottom: 140px;
+}
+
+.thirdSection {
+  h2 {
+    font-family: "Eurostyle MN";
+    font-size: 3rem;
+  }
+  p {
+    font-family: "Codec Pro Bold";
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-family: "Eurostyle MN";
+    font-size: 1.4rem;
+  }
+  margin-bottom: 140px;
+}
+.fourSection {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  img {
+    margin-bottom: 2vh;
+  }
+  background-color: rgba(236, 241, 255, 1);
+  .logoBlock {
+    text-align: center;
+  }
+  h2 {
+    font-family: "Eurostyle MN";
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+  h3 {
+    font-family: "Eurostyle MN";
+    font-size: 1.4rem;
+  }
+  p {
+    font-family: "Codec Pro";
+    font-size: 1.1rem;
+  }
+  margin-bottom: 140px;
+}
+.fiveSection {
+  h2 {
+    font-family: "Eurostyle MN";
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+  h3 {
+    font-family: "Eurostyle MN";
+    font-size: 1.4rem;
+  }
+  p {
+    font-family: "Codec Pro";
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 75vw;
+  }
 }

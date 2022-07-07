@@ -1,55 +1,45 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Eurostyle MN';
+  font-family: "Eurostyle MN";
   src: url("./fonts/eurostile-mn-extended-bold.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro-Black';
+  font-family: "CeraPro-Black";
   src: url("./fonts/CeraPro-Black.ttf");
 }
-
 @font-face {
-  font-family: 'Codec Pro';
+  font-family: "Codec Pro";
   src: url("./fonts/FontsFree-Net-CodecPro-Regular.ttf");
 }
-
 @font-face {
-  font-family: 'Codec Pro Bold';
+  font-family: "Codec Pro Bold";
   src: url("./fonts/CodecPro-Bold.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro Black';
+  font-family: "CeraPro Black";
   src: url("./fonts/CeraPro-Black.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro Bold';
+  font-family: "CeraPro Bold";
   src: url("./fonts/CeraPro-Bold.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro Medium';
+  font-family: "CeraPro Medium";
   src: url("./fonts/CeraPro-Medium.ttf");
 }
-
 @font-face {
-  font-family: 'GoshaSans Bold';
+  font-family: "GoshaSans Bold";
   src: url("./fonts/GoshaSans-Bold.ttf");
 }
-
 @font-face {
-  font-family: 'GoshaSans Regular';
+  font-family: "GoshaSans Regular";
   src: url("./fonts/GoshaSans-Regular.ttf");
 }
-
 nav a {
   font-family: "Eurostyle MN";
   color: black;
@@ -59,35 +49,33 @@ nav a {
 
 .firstSection {
   text-align: center;
-  background-color: #ecf1ff;
+  background-color: rgb(236, 241, 255);
   padding-top: 50px;
   padding-bottom: 50px;
   border-top-left-radius: 70% 10%;
   border-top-right-radius: 70% 10%;
   border-bottom-left-radius: 70% 10%;
   border-bottom-right-radius: 70% 10%;
+  margin-bottom: 140px;
 }
-
 .firstSection button {
   margin-top: 2rem;
   border-width: 3px;
-  border-color: #ecf1ff;
-  color: #ecf1ff;
+  border-color: rgb(236, 241, 255);
+  color: rgb(236, 241, 255);
   background-color: black;
   font-size: 1.5rem;
   min-height: 4rem;
 }
-
 .firstSection h1 {
-  font-family: 'Eurostyle MN';
-  color: #7094fe;
+  font-family: "Eurostyle MN";
+  color: rgb(112, 148, 254);
   font-size: 6rem;
 }
-
 .firstSection p {
   font-size: 1.8rem;
   color: white;
-  font-family: 'Codec Pro Bold';
+  font-family: "Codec Pro Bold";
 }
 
 .blueContainer {
@@ -103,59 +91,55 @@ nav a {
 .secondSection {
   margin-bottom: 140px;
 }
-
 .secondSection h2 {
   font-size: 3rem;
-  font-family: 'Eurostyle MN';
+  font-family: "Eurostyle MN";
 }
-
 .secondSection p {
   font-size: 1.4rem;
-  font-family: 'Codec Pro';
+  font-family: "Codec Pro";
 }
 
 .thirdSection {
   margin-bottom: 140px;
 }
-
 .thirdSection h2 {
   font-family: "Eurostyle MN";
   font-size: 3rem;
 }
-
 .thirdSection p {
   font-family: "Codec Pro Bold";
   font-size: 1.4rem;
 }
-
 .thirdSection h3 {
   font-family: "Eurostyle MN";
   font-size: 1.4rem;
 }
 
 .fourSection {
-  background-color: #ecf1ff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgb(236, 241, 255);
   margin-bottom: 140px;
 }
-
+.fourSection img {
+  margin-bottom: 2vh;
+}
 .fourSection .logoBlock {
   text-align: center;
 }
-
 .fourSection h2 {
   font-family: "Eurostyle MN";
   font-size: 3rem;
   margin-bottom: 3.5rem;
 }
-
 .fourSection h3 {
   font-family: "Eurostyle MN";
   font-size: 1.4rem;
 }
-
 .fourSection p {
   font-family: "Codec Pro";
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .fiveSection h2 {
@@ -163,14 +147,17 @@ nav a {
   font-size: 3rem;
   margin-bottom: 3.5rem;
 }
-
 .fiveSection h3 {
   font-family: "Eurostyle MN";
   font-size: 1.4rem;
 }
-
 .fiveSection p {
   font-family: "Codec Pro";
   font-size: 1.4rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (min-width: 768px) {
+  .container {
+    width: 75vw;
+  }
+}/*# sourceMappingURL=style.css.map */

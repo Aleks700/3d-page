@@ -242,9 +242,27 @@ header {
 
 .sixSection input {
   margin-bottom: 1vh;
+  background-color: black;
+  border: none;
+  border-bottom: #8eacff solid 3px;
 }
 
 .sixSection textarea {
   margin-bottom: 1vh;
+  background-color: black;
+  border: #8eacff solid 3px;
+}
+
+.sixSection label {
+  color: #ecf1ff;
+  font-family: 'Montserrat';
+}
+
+.sixSection button {
+  border: none;
+  background-color: #8eacff;
+  font-family: 'Eurostile MN';
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

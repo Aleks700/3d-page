@@ -183,8 +183,24 @@ header {
 
     input{
        margin-bottom: 1vh;
+       background-color: black;
+       border: none;
+       border-bottom: rgba(142, 172, 255, 1)  solid 3px;
     }
     textarea{
         margin-bottom: 1vh;
+        background-color: black;
+        border: rgba(142, 172, 255, 1)  solid 3px;
+    }
+    label{
+      color:rgba(236, 241, 255, 1);
+      font-family: 'Montserrat';
+    }
+    button{
+      border: none;
+      background-color: rgba(142, 172, 255, 1);
+      font-family: 'Eurostile MN';
+      padding-bottom: 1rem;
+      padding-top: 1rem;
     }
 }

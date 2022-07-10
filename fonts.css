@@ -42,4 +42,9 @@
   font-family: 'GoshaSans Regular';
   src: url("./fonts/GoshaSans-Regular.ttf");
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Regular.ttf");
+}
 /*# sourceMappingURL=fonts.css.map */

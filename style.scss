@@ -178,16 +178,22 @@ header {
     p{
         font-size: 1.4rem;
         color:rgba(255, 255, 255, 1);
+        font-family: 'Codec Pro';
     }
 
 
     input{
+      padding-left: 0.5rem;
        margin-bottom: 1vh;
        background-color: black;
        border: none;
        border-bottom: rgba(142, 172, 255, 1)  solid 3px;
+       color:aliceblue;
     }
     textarea{
+      padding-left: 0.5rem;
+      min-height: 5rem;
+      color:aliceblue;
         margin-bottom: 1vh;
         background-color: black;
         border: rgba(142, 172, 255, 1)  solid 3px;
@@ -200,6 +206,7 @@ header {
       border: none;
       background-color: rgba(142, 172, 255, 1);
       font-family: 'Eurostile MN';
+      font-size: 1.5rem;
       padding-bottom: 1rem;
       padding-top: 1rem;
     }

@@ -1,4 +1,10 @@
 import * as fmViewer from './viewer.js';
+
+
+
+
+
+
 console.log('started')
 
 const SCAN_WIDTH = '400px';
@@ -24,7 +30,23 @@ const SCANS = [
 ];
 
 document.addEventListener('DOMContentLoaded', async event => {
+
+  const carousel = document.querySelector('.carousel');
+  console.log(carousel.childNodes);
+  carousel.addEventListener('click', (event) =>{
+    const clicked = event.currentTarget
+    
+    console.log(event.currentTarget); 
+  })
+  console.log(carousel);
+
+
+
+
+
+
   await fmViewer.default();
+
 
 
   // for (let scan of SCANS) {

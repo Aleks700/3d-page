@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', async event => {
 
     canvas.setAttribute('height', SCAN_HEIGHT);
     canvas.setAttribute('width', SCAN_WIDTH);
+    // canvas.setStyle('height:100%,width:100%')
 
     let viewer = fmViewer.Viewer.create(canvas);
 
@@ -43,8 +44,10 @@ document.addEventListener('DOMContentLoaded', async event => {
     if (!resp.ok) {
       throw 'failed to fetch a model ';
     }
-
+   
     let buf = await resp.arrayBuffer();
+    console.log(resp.arrayBuffer.length);
+    console.log(buf);
     await viewer.loadFmBuffer(buf);
 
     await viewer.renderAll();

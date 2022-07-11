@@ -91,6 +91,10 @@ header {
   min-height: 4rem;
 }
 
+.firstSection button a {
+  text-decoration: none;
+}
+
 .firstSection h1 {
   font-family: "Eurostyle MN";
   color: #7094fe;
@@ -253,6 +257,10 @@ header {
   border: none;
   border-bottom: #8eacff solid 3px;
   color: aliceblue;
+}
+
+.sixSection .inputBorder:focus {
+  outline: none;
 }
 
 .sixSection textarea {

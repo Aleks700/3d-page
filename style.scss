@@ -42,6 +42,9 @@ header {
     font-family: "Eurostyle MN";
     text-transform: uppercase;
     min-height: 4rem;
+    a{
+      text-decoration: none;
+    }
   }
   h1 {
     font-family: "Eurostyle MN";
@@ -183,12 +186,18 @@ header {
 
 
     input{
+    
       padding-left: 0.5rem;
        margin-bottom: 1vh;
        background-color: black;
        border: none;
        border-bottom: rgba(142, 172, 255, 1)  solid 3px;
        color:aliceblue;
+     
+    }
+    .inputBorder:focus{
+      outline: none;
+      // color: red;
     }
     textarea{
       padding-left: 0.5rem;

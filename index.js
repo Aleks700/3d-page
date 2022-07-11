@@ -1,4 +1,5 @@
 import * as fmViewer from './viewer.js';
+console.log('started')
 
 const SCAN_WIDTH = '400px';
 const SCAN_HEIGHT = '400px';
@@ -24,29 +25,28 @@ const SCANS = [
 
 document.addEventListener('DOMContentLoaded', async event => {
   await fmViewer.default();
-  console.log(fmViewer);
-  console.log('123123');
 
-//   for (let scan of SCANS) {
-//     let canvas = document.createElement('canvas');
-//     const block = document.getElementById('canvasBlock');
-//     console.log(block);
-//     document.body.appendChild(canvas);
-//     canvas.id = scan.id;
 
-//     canvas.setAttribute('height', SCAN_HEIGHT);
-//     canvas.setAttribute('width', SCAN_WIDTH);
+  // for (let scan of SCANS) {
+    let canvas = document.createElement('canvas');
+    const block = document.getElementById('canvasBlock');
+    console.log(block);
+    block.appendChild(canvas);
+    canvas.id = 'scan.id'
 
-//     let viewer = fmViewer.Viewer.create(canvas);
+    canvas.setAttribute('height', SCAN_HEIGHT);
+    canvas.setAttribute('width', SCAN_WIDTH);
 
-//     let resp = await fetch('https://silindo.com/fitsme/scan/' + scan.file);
-//     if (!resp.ok) {
-//       throw 'failed to fetch a model ' + scan.name;
-//     }
+    let viewer = fmViewer.Viewer.create(canvas);
 
-//     let buf = await resp.arrayBuffer();
-//     await viewer.loadFmBuffer(buf);
+    let resp = await fetch('/scan/' + 'bag.fm');
+    if (!resp.ok) {
+      throw 'failed to fetch a model ';
+    }
 
-//     await viewer.renderAll();
-//   }
+    let buf = await resp.arrayBuffer();
+    await viewer.loadFmBuffer(buf);
+
+    await viewer.renderAll();
+  // }
 });

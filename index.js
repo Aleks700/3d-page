@@ -31,14 +31,8 @@ const SCANS = [
 
 document.addEventListener('DOMContentLoaded', async event => {
 
-  const carousel = document.querySelector('.carousel');
-  console.log(carousel.childNodes);
-  carousel.addEventListener('click', (event) =>{
-    const clicked = event.currentTarget
-    
-    console.log(event.currentTarget); 
-  })
-  console.log(carousel);
+
+  // console.log(carousel);
 
 
 
@@ -73,5 +67,33 @@ document.addEventListener('DOMContentLoaded', async event => {
     await viewer.loadFmBuffer(buf);
 
     await viewer.renderAll();
+
+
+
+
+    const carousel = document.querySelector('.carousel');
+    console.log(carousel.childNodes);
+    carousel.addEventListener('click', async (event) =>{
+      let viewer = fmViewer.Viewer.create(canvas);
+
+      let resp = await fetch('/scan/' + 'boots.fm');
+      if (!resp.ok) {
+        throw 'failed to fetch a model ';
+      }
+     
+      let buf = await resp.arrayBuffer();
+      console.log(resp.arrayBuffer.length);
+      console.log(buf);
+      await viewer.loadFmBuffer(buf);
+  
+      await viewer.renderAll();
+
+      // const clicked = event.currentTarget
+      
+      console.log(event.currentTarget); 
+    })
+
+
+
   // }
 });

@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
   await fmViewer.default();
 
-  // for (let scan of SCANS) {
   let canvas = document.createElement("canvas");
   const block = document.getElementById("canvasBlock");
   console.log(block);
@@ -38,8 +37,6 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   block.appendChild(canvas);
   canvas.id = "scan.id";
 
-
-  // canvas.setStyle('height:100%,width:100%')
 
   let viewer = fmViewer.Viewer.create(canvas);
 
@@ -55,9 +52,32 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
   await viewer.renderAll();
 
+
+
   const carousel = document.querySelector(".carousel");
-  console.log(carousel.childNodes);
+
+
   carousel.addEventListener("click", async (event) => {
+
+
+    console.log(carousel.childNodes);
+    const carouselImages = carousel.children
+    console.log(carouselImages.item(1));
+    console.log(carouselImages,'carouselImages');
+    let i = 0;
+    while (i < carouselImages.length){
+  
+    carouselImages.item(i).classList.add('blackBorder');
+      console.log(carouselImages.item(i));
+      i++;
+    };
+
+
+
+
+    console.log(event.target,'это объект по которому был click')
+    const clickedELement  = event.target;
+    
     const block = document.getElementById("canvasBlock");
     let canvas = document.createElement("canvas");
     canvas.setAttribute("height", SCAN_HEIGHT);
@@ -77,8 +97,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
     await viewer.renderAll();
 
-    // const clicked = event.currentTarget
 
-    console.log(event.currentTarget);
+  
   });
 });

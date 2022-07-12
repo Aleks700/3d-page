@@ -122,6 +122,10 @@ header {
   margin-bottom: 140px;
 }
 
+.secondSection .blackBorder {
+  border: 3px solid black;
+}
+
 .secondSection .carousel {
   background-color: rgba(142, 172, 255, 0.12);
 }

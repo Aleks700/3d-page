@@ -25,6 +25,7 @@ const SCANS = [
 ];
 
 document.addEventListener("DOMContentLoaded", async (event) => {
+  let  RenderedItem = 0;
   // console.log(carousel);
 
   await fmViewer.default();
@@ -55,6 +56,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
 
   const carousel = document.querySelector(".carousel");
+  carousel.children[0].classList.add('blackBorder');
 
 
   carousel.addEventListener("click", async (event) => {
@@ -67,8 +69,16 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     let i = 0;
     while (i < carouselImages.length){
   
-    carouselImages.item(i).classList.add('blackBorder');
+      carouselImages.item(i).classList.remove('blackBorder');
+
     if(carouselImages.item(i)==event.target||carouselImages.item(i).children[0]==event.target){
+      carouselImages.item(i).classList.add('blackBorder');
+     if(RenderedItem==i){
+      console.log('Уже отрендерено')
+     }else{
+      RenderedItem = i;
+      console.log('Новый рендер')
+     }
       console.log('clicked number was',i);
     }
       console.log(carouselImages.item(i));

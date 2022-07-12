@@ -130,6 +130,10 @@ header {
   background-color: rgba(142, 172, 255, 0.12);
 }
 
+.secondSection .carousel div {
+  min-width: 4rem;
+}
+
 .secondSection .canvasBlock {
   border: 3px solid black;
   min-height: 40vh;

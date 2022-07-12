@@ -6,10 +6,7 @@ const SCAN_WIDTH = "400px";
 const SCAN_HEIGHT = "400px";
 
 const SCANS = [
-  {
-    id: "backpack",
-    file: "backpack.fm",
-  },
+
   {
     id: "bag",
     file: "bag.fm",
@@ -22,6 +19,10 @@ const SCANS = [
     id: "puppet",
     file: "puppet.fm",
   },
+  {
+    id: "backpack",
+    file: "backpack.fm",
+  }
 ];
 
 document.addEventListener("DOMContentLoaded", async (event) => {
@@ -49,14 +50,19 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   let buf = await resp.arrayBuffer();
   console.log(resp.arrayBuffer.length);
   console.log(buf);
+  
   await viewer.loadFmBuffer(buf);
 
+
   await viewer.renderAll();
+  
 
 
 
   const carousel = document.querySelector(".carousel");
   carousel.children[0].classList.add('blackBorder');
+
+
 
 
   carousel.addEventListener("click", async (event) => {

@@ -78,6 +78,9 @@ header {
 
   .carousel {
     background-color: rgba(142, 172, 255, 0.12);
+    div{
+      min-width: 4rem;
+    }
   }
     .canvasBlock{
         border: 3px solid black;

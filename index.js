@@ -68,6 +68,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     while (i < carouselImages.length){
   
     carouselImages.item(i).classList.add('blackBorder');
+    if(carouselImages.item(i)==event.target||carouselImages.item(i).children[0]==event.target){
+      console.log('clicked number was',i);
+    }
       console.log(carouselImages.item(i));
       i++;
     };
@@ -91,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     }
 
     let buf = await resp.arrayBuffer();
-    console.log(resp.arrayBuffer.length);
+    // console.log(resp.arrayBuffer.length);
     console.log(buf);
     await viewer.loadFmBuffer(buf);
 

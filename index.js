@@ -27,6 +27,7 @@ const SCANS = [
 
 document.addEventListener("DOMContentLoaded", async (event) => {
   const Spinner = document.getElementsByClassName('spinner')[0];
+  console.log(Spinner);
   let  RenderedItem = 0;
   // console.log(carousel);
 
@@ -104,6 +105,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     canvas.setAttribute("height", SCAN_HEIGHT);
     canvas.setAttribute("width", SCAN_WIDTH);
     block.replaceChildren(canvas);
+    block.appendChild(Spinner);
     
     let viewer = fmViewer.Viewer.create(canvas);
 
@@ -116,7 +118,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     // console.log(resp.arrayBuffer.length);
     console.log(buf);
     await viewer.loadFmBuffer(buf);
-
+    Spinner.classList.add('hidden');
     await viewer.renderAll();
 
 

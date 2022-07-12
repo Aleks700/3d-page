@@ -11,12 +11,12 @@ const SCANS = [
     file: "backpack.fm",
   },
   {
-    id: "boots",
-    file: "boots.fm",
-  },
-  {
     id: "bag",
     file: "bag.fm",
+  },
+  {
+    id: "boots",
+    file: "boots.fm",
   },
   {
     id: "puppet",
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
   let viewer = fmViewer.Viewer.create(canvas);
 
-  let resp = await fetch("/scan/" + "bag.fm");
+  let resp = await fetch("/scan/" + SCANS[0].file);
   if (!resp.ok) {
     throw "failed to fetch a model ";
   }
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     block.replaceChildren(canvas);
     let viewer = fmViewer.Viewer.create(canvas);
 
-    let resp = await fetch("/scan/" + "boots.fm");
+    let resp = await fetch("/scan/" + SCANS[RenderedItem].file);
     if (!resp.ok) {
       throw "failed to fetch a model ";
     }

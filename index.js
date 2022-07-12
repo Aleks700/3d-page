@@ -33,11 +33,12 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   let canvas = document.createElement("canvas");
   const block = document.getElementById("canvasBlock");
   console.log(block);
+  canvas.setAttribute("height", SCAN_HEIGHT);
+  canvas.setAttribute("width", SCAN_WIDTH);
   block.appendChild(canvas);
   canvas.id = "scan.id";
 
-  canvas.setAttribute("height", SCAN_HEIGHT);
-  canvas.setAttribute("width", SCAN_WIDTH);
+
   // canvas.setStyle('height:100%,width:100%')
 
   let viewer = fmViewer.Viewer.create(canvas);
@@ -59,6 +60,8 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   carousel.addEventListener("click", async (event) => {
     const block = document.getElementById("canvasBlock");
     let canvas = document.createElement("canvas");
+    canvas.setAttribute("height", SCAN_HEIGHT);
+    canvas.setAttribute("width", SCAN_WIDTH);
     block.replaceChildren(canvas);
     let viewer = fmViewer.Viewer.create(canvas);
 

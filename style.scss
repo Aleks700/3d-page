@@ -202,10 +202,7 @@ header {
        color:aliceblue;
      
     }
-    .inputBorder:focus{
-      outline: none;
-      // color: red;
-    }
+   
     textarea{
       padding-left: 0.5rem;
       min-height: 5rem;
@@ -214,6 +211,10 @@ header {
         background-color: black;
         border: rgba(142, 172, 255, 1)  solid 3px;
     
+    }
+    .inputBorder:focus{
+      outline: none;
+      // color: red;
     }
     label{
       color:rgba(236, 241, 255, 1);

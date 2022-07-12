@@ -264,10 +264,6 @@ header {
   color: aliceblue;
 }
 
-.sixSection .inputBorder:focus {
-  outline: none;
-}
-
 .sixSection textarea {
   padding-left: 0.5rem;
   min-height: 5rem;
@@ -275,6 +271,10 @@ header {
   margin-bottom: 1vh;
   background-color: black;
   border: #8eacff solid 3px;
+}
+
+.sixSection .inputBorder:focus {
+  outline: none;
 }
 
 .sixSection label {

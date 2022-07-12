@@ -126,6 +126,14 @@ header {
   border: 1px solid black;
 }
 
+.secondSection .spinner {
+  position: absolute;
+}
+
+.secondSection .hidden {
+  visibility: hidden;
+}
+
 .secondSection .carousel {
   background-color: rgba(142, 172, 255, 0.12);
 }
@@ -135,6 +143,7 @@ header {
 }
 
 .secondSection .canvasBlock {
+  position: relative;
   border: 3px solid black;
   min-height: 40vh;
 }

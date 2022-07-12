@@ -76,6 +76,15 @@ header {
     border: 1px solid black;
   }
 
+
+  .spinner{
+    position: absolute;
+    
+  }
+  .hidden{
+    visibility: hidden;
+  }
+
   .carousel {
     background-color: rgba(142, 172, 255, 0.12);
     div{
@@ -83,6 +92,7 @@ header {
     }
   }
     .canvasBlock{
+        position: relative;
         border: 3px solid black;
         min-height: 40vh;
     }

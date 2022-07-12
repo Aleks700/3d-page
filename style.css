@@ -89,6 +89,7 @@ header {
   font-family: "Eurostyle MN";
   text-transform: uppercase;
   min-height: 4rem;
+  min-width: 250px;
 }
 
 .firstSection button a {

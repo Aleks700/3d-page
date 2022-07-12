@@ -42,6 +42,9 @@ header {
     font-family: "Eurostyle MN";
     text-transform: uppercase;
     min-height: 4rem;
+    min-width: 250px;
+    // max-width: 250px !important;
+  
     a{
       text-decoration: none;
     }

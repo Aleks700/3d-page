@@ -79,7 +79,9 @@ header {
 
   .spinner{
     position: absolute;
-    
+    img{
+      width: 60px;
+    }
   }
   .hidden{
     visibility: hidden;
@@ -95,6 +97,7 @@ header {
         position: relative;
         border: 3px solid black;
         min-height: 40vh;
+        padding:0px;
     }
   h2 {
     font-size: 3rem;
@@ -244,4 +247,9 @@ header {
       padding-bottom: 1rem;
       padding-top: 1rem;
     }
+}
+canvas {
+  background-color: lightblue;
+  width: 100% !important;
+  height: 100% !important;
 }

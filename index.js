@@ -2,8 +2,8 @@ import * as fmViewer from "./viewer.js";
 
 console.log("started");
 
-const SCAN_WIDTH = "500px";
-const SCAN_HEIGHT = "500px";
+const SCAN_WIDTH = "1000px";
+const SCAN_HEIGHT = "1000px";
 
 const SCANS = [
 

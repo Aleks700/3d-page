@@ -2,8 +2,8 @@ import * as fmViewer from "./viewer.js";
 
 console.log("started");
 
-const SCAN_WIDTH = "1000px";
-const SCAN_HEIGHT = "1000px";
+const SCAN_WIDTH = "700px";
+const SCAN_HEIGHT = "700px";
 
 const SCANS = [
 
@@ -58,6 +58,41 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   Spinner.classList.add('hidden');
   await viewer.renderAll();
   
+
+
+
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit',async (e)=>{
+    e.preventDefault();
+    console.log('Event was prevent defaulted');
+    const inputs = document.querySelectorAll('input');
+    const textarea = document.querySelector('textarea');
+    console.log(inputs,'name');
+    console.log(inputs[0].value);
+    console.log(inputs[1].value);
+    console.log(textarea.value);
+    const data  = {
+      name: inputs[0].value,
+      Email: inputs[1].value,
+      message:textarea.value,
+    };
+    console.log(JSON.stringify(data));
+    let response = await fetch('mail.php',{
+      method: 'POST',
+      headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+
+    let result = response.ok
+    console.log(result);
+  })
+  console.log(form,'form');
+
+
 
 
 

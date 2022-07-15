@@ -189,6 +189,15 @@ header {
   .container {
     width: 75vw;
   }
+
+}
+@media (max-width: 479px) {
+  .container {
+  margin-left: auto;
+  margin-right: auto;
+    width: 95vw;
+  }
+  
 }
 
 .sixSection{

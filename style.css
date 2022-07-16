@@ -258,7 +258,7 @@ header .row {
 }
 
 .secondSection {
-  margin-bottom: 140px;
+  margin-bottom: 20px;
 }
 
 .secondSection .blackBorder {
@@ -302,8 +302,14 @@ header .row {
   font-family: "Codec Pro";
 }
 
+@media (min-width: 768px) {
+  .secondSection {
+    margin-bottom: 140px;
+  }
+}
+
 .thirdSection {
-  margin-bottom: 140px;
+  margin-bottom: 20px;
 }
 
 .thirdSection h2 {
@@ -321,11 +327,17 @@ header .row {
   font-size: 1.4rem;
 }
 
+@media (min-width: 768px) {
+  .thirdSection {
+    margin-bottom: 140px;
+  }
+}
+
 .fourSection {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #ecf1ff;
-  margin-bottom: 140px;
+  margin-bottom: 20px;
 }
 
 .fourSection img {
@@ -352,9 +364,10 @@ header .row {
   font-size: 1.1rem;
 }
 
-.fiveSection .imageBlock {
-  padding-top: 5vh;
-  padding-left: 5vw;
+@media (min-width: 768px) {
+  .fourSection {
+    margin-bottom: 140px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -383,7 +396,6 @@ header .row {
 .fiveSection h2 {
   font-family: "Eurostyle MN";
   font-size: 3rem;
-  margin-bottom: 3.5rem;
 }
 
 .fiveSection h3 {

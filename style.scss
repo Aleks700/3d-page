@@ -211,7 +211,10 @@ header {
     font-size: 1.4rem;
     font-family: "Codec Pro";
   }
-  margin-bottom: 140px;
+  @media (min-width: 768px) {
+    margin-bottom: 140px;
+  }
+  margin-bottom: 20px;
 }
 
 .thirdSection {
@@ -227,7 +230,10 @@ header {
     font-family: "Eurostyle MN";
     font-size: 1.4rem;
   }
-  margin-bottom: 140px;
+  @media (min-width: 768px) {
+    margin-bottom: 140px;
+  }
+  margin-bottom: 20px;
 }
 .fourSection {
   padding-top: 3rem;
@@ -252,14 +258,16 @@ header {
     font-family: "Codec Pro";
     font-size: 1.1rem;
   }
-  margin-bottom: 140px;
+  @media (min-width: 768px) {
+    margin-bottom: 140px;
+  }
+  margin-bottom: 20px;
 }
 .fiveSection {
     .imageBlock{
       
       
-        padding-top: 5vh;
-        padding-left:5vw;
+       
         @media (min-width: 767px) {
           min-height: 450px;
           background-color: rgba(236, 241, 255, 1);
@@ -288,7 +296,9 @@ header {
   h2 {
     font-family: "Eurostyle MN";
     font-size: 3rem;
-    margin-bottom: 3.5rem;
+ 
+    
+    
   }
   h3 {
     font-family: "Eurostyle MN";

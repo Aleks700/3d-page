@@ -124,8 +124,8 @@
 .slideUp {
   -webkit-animation: slideUp;
           animation: slideUp;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -172,6 +172,7 @@ header .row {
 }
 
 .toggle-nav .close-btn {
+  margin-top: .5rem;
   margin-left: auto;
   margin-right: 2rem;
 }
@@ -352,21 +353,28 @@ header .row {
 }
 
 .fiveSection .imageBlock {
-  min-height: 450px;
-  background-color: #ecf1ff;
   padding-top: 5vh;
   padding-left: 5vw;
-  margin-bottom: 4rem;
 }
 
-.fiveSection .textBlock {
-  min-height: 500px;
-  background-color: black;
-  margin-bottom: 4rem;
+@media (min-width: 767px) {
+  .fiveSection .imageBlock {
+    min-height: 450px;
+    background-color: #ecf1ff;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .fiveSection .textBlock {
+    min-height: 500px;
+    background-color: #8eacff;
+    margin-bottom: 4rem;
+  }
 }
 
 .fiveSection h1 {
-  color: #8eacff;
+  color: black;
   font-size: 6rem;
   font-family: "Eurostyle MN";
   margin-bottom: 0px;
@@ -386,7 +394,7 @@ header .row {
 .fiveSection p {
   font-family: "Codec Pro";
   font-size: 1.3rem;
-  color: #f9faff;
+  color: black;
 }
 
 @media (min-width: 768px) {

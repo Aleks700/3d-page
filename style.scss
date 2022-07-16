@@ -55,7 +55,7 @@
 }
 .slideUp{
   animation: slideUp;
-  animation-duration:1s;
+  animation-duration:3s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -88,8 +88,10 @@ header {
   background-color: black;
   top: -40vh;
   .close-btn{
+    margin-top: .5rem;
     margin-left:auto;
     margin-right: 2rem;
+    
    
   }
   a{
@@ -254,20 +256,31 @@ header {
 }
 .fiveSection {
     .imageBlock{
-        min-height: 450px;
-        background-color: rgba(236, 241, 255, 1);
+      
+      
         padding-top: 5vh;
         padding-left:5vw;
-        margin-bottom: 4rem;
+        @media (min-width: 767px) {
+          min-height: 450px;
+          background-color: rgba(236, 241, 255, 1);
+          margin-bottom: 4rem;
+          
+        }
     }
     .textBlock{
-        min-height: 500px;
-        background-color: black;
-        margin-bottom: 4rem;
+       
+  
+        @media (min-width: 767px) {
+          min-height: 500px;
+          background-color: rgba(142, 172, 255, 1);
+          margin-bottom: 4rem;
+          
+        }
+    
     }
 
     h1{
-        color:rgba(142, 172, 255, 1);
+        color: black;
         font-size: 6rem ;
         font-family: "Eurostyle MN";
         margin-bottom: 0px;
@@ -284,7 +297,7 @@ header {
   p {
     font-family: "Codec Pro";
     font-size: 1.3rem;
-    color:rgba(249, 250, 255, 1);
+    color:black;
   }
 }
 @media (min-width: 768px) {

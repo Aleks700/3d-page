@@ -41,12 +41,26 @@ burger.addEventListener('click',()=>{
 });
 
 
-const closeBtn = document.querySelector('close-btn');
+const closeBtn = document.getElementById('close-btn');
 closeBtn.addEventListener('click',()=>{
+  console.log('clicked CLose');
   const toggleNav = document.getElementById('toggle-nav').classList.remove('slideDown');
   toggleNav.classList.add('slideUp');
   
-})
+});
+
+
+const links = document.querySelectorAll('.toggle-nav a');
+links.forEach(element => {
+    element.addEventListener('click',()=>{
+      const toggleNav = document.getElementById('toggle-nav').classList.remove('slideDown');
+      toggleNav.classList.add('slideUp');
+    })
+});
+
+// for (let i=0;i++;links.length){
+
+// }
 
 
 

@@ -25,6 +25,42 @@
 
   }
 }
+
+
+@keyframes slideDown {
+  0%{
+    top: -40vh;
+  }
+  100%{
+    top: 0vh;
+  }
+}
+
+@keyframes slideUp {
+  0%{
+    top: 0vh;
+   
+  }
+  100%{
+    top: -40vh;
+  }
+}
+
+
+.slideDown{
+  animation: slideDown;
+  animation-duration:1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.slideUp{
+  animation: slideUp;
+  animation-duration:1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+
 header {
     margin-top: 1vh;
     margin-bottom: 5vh;
@@ -35,12 +71,27 @@ header {
 .container-fluid{
   margin-left:0px;
 }
+.link{
+  border-bottom: 3px solid #7094fe;
+  width:100%;
+  display: flex;
+  justify-content:center;
+  p{
+    margin-bottom:0px
+  };
+}
 .toggle-nav{
+  display:flex;
   z-index: 100;
   width:100vw;
   position: absolute;
- 
   background-color: black;
+  top: -40vh;
+  .close-btn{
+    margin-left:auto;
+    margin-right: 2rem;
+   
+  }
   a{
     
     color: white;

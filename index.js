@@ -25,7 +25,38 @@ const SCANS = [
   }
 ];
 
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", async (event) => {
+
+
+const burger = document.getElementById('burger');
+burger.addEventListener('click',()=>{
+  const toggleNav = document.getElementById('toggle-nav').classList.add('slideDown')
+  console.log('clicked burger');
+});
+
+
+const closeBtn = document.querySelector('close-btn');
+closeBtn.addEventListener('click',()=>{
+  const toggleNav = document.getElementById('toggle-nav').classList.remove('slideDown');
+  toggleNav.classList.add('slideUp');
+  
+})
+
+
+
+
+
+
+
+
+
+
   const Spinner = document.getElementsByClassName('spinner')[0];
   console.log(Spinner);
   let  RenderedItem = 0;
@@ -133,6 +164,9 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       console.log(carouselImages.item(i));
       i++;
     };
+
+
+
 
 
 

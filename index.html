@@ -11,18 +11,28 @@
 </head>
 <body>
 
+    <nav class="toggle-nav  flex-column align-items-center" id="toggle-nav">
+        <div class="close-btn">
+            <img src="./img/Closed.svg" alt="" >
+       </div>
+       <div class='link'>  <a href="#Technology"><p>Technology</p></a>
+    </div>
+      <div class='link'>
+        <a  href="#Applications"><p>Applications</p></a>
+      </div>
+      <div class='link'>
+        <a  href="#Procedure"><p>Procedure</p></a>
+      </div>
+    <div class='link'>
+        <a  href="#Contact"><p>Contact</p></a>
+    </div>
+
+    </nav>
     <header class="container-fluid">
-        <nav class="toggle-nav d-flex flex-column align-items-center">
-            <a href="#Technology"><p>Technology</p></a>
-            <a  href="#Applications"><p>Applications</p></a>
-            <a  href="#Procedure"><p>Procedure</p></a>
-            <a  href="#Contact"><p>Contact</p></a>
-        </nav>
         <div class="row">
             <div class="col-md-2">
                 <img src="./img/Logo.svg" alt="logo" class="img-fluid"></img>
             </div>
-            
             <div class="col-md-10">
                 <nav class = 'd-md-flex justify-content-around flex-column  flex-md-row main-nav'> 
                     <a href="#Technology"><p>Technology</p></a>
@@ -31,7 +41,7 @@
                     <a  href="#Contact"><p>Contact</p></a>
                 </nav>
             </div>
-            <div class="burger">
+            <div class="burger" id="burger">
                  <img src="./img/logo/Burger.svg" alt="" >
             </div>
         </div>

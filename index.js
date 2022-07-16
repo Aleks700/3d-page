@@ -3,7 +3,7 @@ import * as fmViewer from "./viewer.js";
 console.log("started");
 
 const SCAN_WIDTH = "700px";
-const SCAN_HEIGHT = "700px";
+const SCAN_HEIGHT = "1000px";
 
 const SCANS = [
 
@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   const form = document.querySelector('form');
   form.addEventListener('submit',async (e)=>{
     e.preventDefault();
+    const data = new FormData(formElem);
+        
+
+  
     console.log('Event was prevent defaulted');
     const inputs = document.querySelectorAll('input');
     const textarea = document.querySelector('textarea');
@@ -72,25 +76,18 @@ document.addEventListener("DOMContentLoaded", async (event) => {
     console.log(inputs[0].value);
     console.log(inputs[1].value);
     console.log(textarea.value);
-    const data  = {
-      name: inputs[0].value,
-      Email: inputs[1].value,
-      message:textarea.value,
-    };
-    console.log(JSON.stringify(data));
-    let response = await fetch('mail.php',{
-      method: 'POST',
-      headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
 
-    let result = response.ok
-    console.log(result);
-  })
-  console.log(form,'form');
+    let response = await fetch('https://olympeducation.kz/mail.php',{
+      mode: 'no-cors',
+      method: 'POST',
+      body:  data
+    });
+    document.querySelectorAll('input')[0].value='';
+    document.querySelectorAll('input')[1].value='';
+    document.querySelector('textarea').value='';
+
+  });
+
 
 
 

@@ -12,20 +12,28 @@
 <body>
 
     <header class="container-fluid">
+        <nav class="toggle-nav d-flex flex-column align-items-center">
+            <a href="#Technology"><p>Technology</p></a>
+            <a  href="#Applications"><p>Applications</p></a>
+            <a  href="#Procedure"><p>Procedure</p></a>
+            <a  href="#Contact"><p>Contact</p></a>
+        </nav>
         <div class="row">
             <div class="col-md-2">
                 <img src="./img/Logo.svg" alt="logo" class="img-fluid"></img>
             </div>
             
             <div class="col-md-10">
-                <nav class = 'd-md-flex justify-content-around '> 
-                    <a href="#Technology">Technology</a>
-                    <a  href="#Applications">Applications</a>
-                    <a  href="#Procedure">Procedure</a>
-                    <a  href="#Contact">Contact</a>
+                <nav class = 'd-md-flex justify-content-around flex-column  flex-md-row main-nav'> 
+                    <a href="#Technology"><p>Technology</p></a>
+                    <a  href="#Applications"><p>Applications</p></a>
+                    <a  href="#Procedure"><p>Procedure</p></a>
+                    <a  href="#Contact"><p>Contact</p></a>
                 </nav>
             </div>
-            <div class="burger"> <img src="./img/logo/Burger.svg" alt="" class=""></div>
+            <div class="burger">
+                 <img src="./img/logo/Burger.svg" alt="" >
+            </div>
         </div>
     </header>
 
@@ -222,6 +230,17 @@
     <div class="baloon d-inline-flex" id="alert" >
         <p>The email has been sent</p> 
     </div>
+    <footer class="d-flex flex-md-row ps-5 flex-column">
+        <div class=" col-md-2 d-flex justify-content-center">
+            <img src="./img/WhiteLogo.svg" alt="logo" class="img-fluid"></img>
+           
+        </div>
+        <div class="offset-md-3  col-md-2 d-flex justify-content-center">
+            <img src="./img/logo/©2022 FITSME.svg" alt="logo" class="img-fluid "></img>
+           
+        </div>
+      
+    </footer>
     <script  type="module" src="./index.js"></script>
 </body>
 </html>

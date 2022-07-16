@@ -8,10 +8,10 @@
 @import "firstSection.scss";
 
 // первый блок
-nav {
+.main-nav {
   // width: 45vw ;
  @media (max-width: 767px){
-  display: none;
+    display: none!important;
  }
   @media (min-width: 1024px) {
     margin-left: 20vw;
@@ -28,9 +28,32 @@ nav {
 header {
     margin-top: 1vh;
     margin-bottom: 5vh;
+    .row{
+      position: relative;
+    }
 }
+.container-fluid{
+  margin-left:0px;
+}
+.toggle-nav{
+  z-index: 100;
+  width:100vw;
+  position: absolute;
+ 
+  background-color: black;
+  a{
+    
+    color: white;
+    font-family: "Eurostyle MN";
+    text-decoration: none;
+    font-size: 1.2rem;
 
+  }
+  
+}
 .burger{
+  position: absolute;
+  right:2rem;
   display: none;
   @media (max-width: 767px){
     display: block;
@@ -108,7 +131,7 @@ header {
   .spinner{
     position: absolute;
     img{
-      width: 60px;
+      width: 100px;
     }
   }
   .hidden{
@@ -216,6 +239,7 @@ header {
 @media (min-width: 768px) {
   .container {
     width: 75vw;
+    max-width: 1200px;
   }
 
 }
@@ -346,11 +370,22 @@ canvas {
   background-color: lightblue;
   width: 100% !important;
   height: 100% !important;
+  touch-action: none;
 }
 
 
 @media (max-width: 479px){
   h2{
     font-size: 2rem!important;
+  }
+}
+
+
+footer{
+  height: 4rem;
+  background-color: rgba(142, 172, 255, 1);
+  @media screen and  (max-width:767px) {
+    height: 6rem;
+    justify-content: space-evenly;
   }
 }

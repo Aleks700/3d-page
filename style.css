@@ -318,7 +318,7 @@ header .row {
 .secondSection .canvasBlock {
   position: relative;
   border: 3px solid black;
-  min-height: 40vh;
+  min-height: 30vh;
   padding: 0px;
 }
 

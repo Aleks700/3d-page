@@ -55,16 +55,42 @@
   src: url("./fonts/Montserrat-Regular.ttf");
 }
 
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    margin-left: 20vw;
+  }
+}
+
 nav a {
   font-family: "Eurostyle MN";
   color: black;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 header {
   margin-top: 1vh;
   margin-bottom: 5vh;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    width: 5rem;
+  }
+  .burger img {
+    width: 100%;
+  }
 }
 
 .firstSection {
@@ -100,6 +126,12 @@ header {
   font-family: "Eurostyle MN";
   color: #7094fe;
   font-size: 6rem;
+}
+
+@media (max-width: 479px) {
+  .firstSection h1 {
+    font-size: 3rem;
+  }
 }
 
 .firstSection p {
@@ -332,6 +364,12 @@ header {
   line-height: 1;
 }
 
+@media (max-width: 479px) {
+  .sixSection h1 {
+    font-size: 3rem;
+  }
+}
+
 .sixSection p {
   font-size: 1.4rem;
   color: white;
@@ -378,5 +416,11 @@ canvas {
   background-color: lightblue;
   width: 100% !important;
   height: 100% !important;
+}
+
+@media (max-width: 479px) {
+  h2 {
+    font-size: 2rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

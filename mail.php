@@ -1,20 +1,16 @@
 
 <?php 
-// $name = $_POST['name'];
-// $email = $_POST['email'];
-// $message = $_POST['message'];
-// $to = "alekstok97@mail.ru";
-// $subject = "mail from website";
-// $text = "Name = ".$name ."\r\n Email = " .$email. "\Message =".$message;
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$massage = "php worsted langaigh in the world".$name;
+$to = 'alekstok97@mail.ru';
+$subject = 'message from work';
+$sending_message = "message from".$name.''.$message;
+//header("Location: https://www.google.com");
 
-
-// $headers = "From: noreply@yoursite.com"."\r\n"."CC: somebodyelse@example.com";
-// if($email!=NULL){
-//     mail($to,$subject,$text,$headers);
-// }
-headers("Location: http://aleksty9.beget.tech/redirect.html");
-
-
-
+$headers = "From: noreply@yoursite.com"."\r\n"."CC:".$name;
+print mail($to, $subject,$massage);
+echo $name;
 
 ?>

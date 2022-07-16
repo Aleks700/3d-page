@@ -200,6 +200,58 @@ header {
   
 }
 
+
+
+@keyframes example {
+ 
+  0% {
+    visibility: visible;
+    bottom: -10vh;
+    // top: -5vh;
+  }
+  // 80%{
+  //   left: 4.5vw;
+  // }
+
+  10%{
+    bottom: 5vh;
+  }
+  100%{
+    visibility:hidden
+  }
+}
+
+
+
+.baloon { 
+visibility: visible;
+position: fixed;
+right: 5vw;
+padding-top:1rem;
+padding-bottom:1rem;
+padding-left:2rem;
+padding-right:3rem;
+font-size: 1.5rem;
+  background-color: #4773ee; 
+  color: white;
+  border-radius: 5px;
+  
+  @media  (max-width:479px) {
+    // width: 40%;
+  }
+  p{
+    margin-bottom: 0px;
+  }
+}
+
+
+.animation{
+  animation-name: example ;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+
 .sixSection{
 
     padding-top:5vh;

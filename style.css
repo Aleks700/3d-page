@@ -265,6 +265,59 @@ header {
   }
 }
 
+@-webkit-keyframes example {
+  0% {
+    visibility: visible;
+    bottom: -10vh;
+  }
+  10% {
+    bottom: 5vh;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes example {
+  0% {
+    visibility: visible;
+    bottom: -10vh;
+  }
+  10% {
+    bottom: 5vh;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.baloon {
+  visibility: visible;
+  position: fixed;
+  right: 5vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 3rem;
+  font-size: 1.5rem;
+  background-color: #4773ee;
+  color: white;
+  border-radius: 5px;
+}
+
+.baloon p {
+  margin-bottom: 0px;
+}
+
+.animation {
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .sixSection {
   padding-top: 5vh;
   background-color: black;

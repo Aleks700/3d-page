@@ -82,11 +82,19 @@ document.addEventListener("DOMContentLoaded", async (event) => {
       method: 'POST',
       body:  data
     });
+    
+
+  
     document.querySelectorAll('input')[0].value='';
     document.querySelectorAll('input')[1].value='';
     document.querySelector('textarea').value='';
-
+    const p = document.getElementById('alert')
+    p.classList.add('animation');
+    setTimeout(()=>{
+      p.classList.remove('animation');
+    },3000)
   });
+
 
 
 

@@ -28,7 +28,7 @@ const SCANS = [
 
 
 
-
+// document.body.style.overflow = "hidden";
 
 
 document.addEventListener("DOMContentLoaded", async (event) => {
@@ -61,7 +61,13 @@ links.forEach(element => {
 // for (let i=0;i++;links.length){
 
 // }
-
+document.getElementById('canvasBlock').addEventListener('mouseover',()=>{
+  console.log('bitchis');
+  document.body.style.overflow = "hidden";
+})
+document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
+  document.body.style.overflow = "auto";
+})
 
 
 

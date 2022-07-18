@@ -194,6 +194,9 @@ header {
   .Note{
     background-color: black;
     color: white;
+    @media (max-width: 479px) {
+       font-size: 0.7rem;
+    }
   }
   .blackBorder{
     border: 1px solid black;

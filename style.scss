@@ -190,6 +190,11 @@ header {
 
 
 .secondSection {
+
+  .Note{
+    background-color: black;
+    color: white;
+  }
   .blackBorder{
     border: 1px solid black;
   }
@@ -214,6 +219,7 @@ header {
     background-color: rgba(142, 172, 255, 0.12);
     div{
       min-width: 4rem;
+      max-width: 5rem;
     }
   }
     .canvasBlock{

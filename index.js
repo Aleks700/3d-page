@@ -8,30 +8,41 @@ const SCAN_HEIGHT = "700px";
 const SCANS = [
 
   {
-    id: "bag",
-    file: "bag.fm",
-  },
-  {
     id: "boots",
     file: "boots.fm",
   },
   {
-    id: "puppet",
-    file: "puppet.fm",
+    id: "tetra-pack",
+    file: "tetra-pack.fm",
   },
+  
   {
     id: "backpack",
     file: "backpack.fm",
   }
 ];
 
-
+// #GetInTouch
 
 
 // document.body.style.overflow = "hidden";
 
 
 document.addEventListener("DOMContentLoaded", async (event) => {
+
+
+
+const formButton = document.getElementById('formButton');
+formButton.addEventListener('click',()=>{
+  console.log('try work');
+  document.location='#GetInTouch';
+  const form  = document.getElementById('formElem');
+  // const child = form.querySelector('input');
+  form.querySelector('input').focus();
+  
+  // console.log(child);
+
+})
 
 
 const burger = document.getElementById('burger');

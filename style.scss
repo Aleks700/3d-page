@@ -76,8 +76,11 @@ header {
   width:100%;
   display: flex;
   justify-content:center;
+  align-items: center;
+  min-height: 3rem;
   p{
-    margin-bottom:0px
+    margin-bottom:0px;  
+    font-size: 2rem;
   };
 }
 .toggle-nav{
@@ -87,12 +90,11 @@ header {
   position: absolute;
   background-color: black;
   top: -40vh;
+  font-size: 2rem;
   .close-btn{
     margin-top: .5rem;
     margin-left:auto;
     margin-right: 2rem;
-    
-   
   }
   a{
     

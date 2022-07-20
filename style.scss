@@ -91,7 +91,7 @@ header {
   width:100vw;
   position: absolute;
   background-color: black;
-  top: -100vh;
+  top: -200vh;
   font-size: 2rem;
   .close-btn{
     margin-top: .5rem;
@@ -348,6 +348,7 @@ header {
     max-width: 1200px;
   }
 
+
 }
 @media (max-width: 479px) {
   .container {
@@ -418,13 +419,13 @@ font-size: 1.5rem;
     border-top-right-radius: 70% 10%;
  
     h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-family: "Eurostyle MN";
         color:rgba(142, 172, 255, 1);
         line-height: 1;
         @media (max-width: 479px){
      
-          font-size: 3rem;
+          font-size: 2.8rem;
        
       }
     }

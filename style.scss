@@ -110,7 +110,7 @@ header {
 }
 .burger{
   position: absolute;
-  right:2rem;
+  right:0.4rem;
   display: none;
   @media (max-width: 767px){
     display: block;
@@ -134,7 +134,10 @@ header {
   border-top-right-radius: 70% 10%;
   border-bottom-left-radius: 70% 10%;
   border-bottom-right-radius: 70% 10%;
-  margin-bottom: 140px;
+  @media (min-width: 768px) {
+    margin-bottom: 140px;
+  }
+  margin-bottom: 20px;
   button {
     margin-top: 2rem;
     border-width: 3px;

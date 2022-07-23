@@ -185,25 +185,11 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
     if(carouselImages.item(i)==event.target||carouselImages.item(i).children[0]==event.target){
       carouselImages.item(i).classList.add('blackBorder');
      if(RenderedItem==i){
-      console.log('Уже отрендерено')
+      console.log('Уже отрендерено');
+      Spinner.classList.add('hidden');
      }else{
       RenderedItem = i;
-      console.log('Новый рендер')
-     }
-      console.log('clicked number was',i);
-    }
-      console.log(carouselImages.item(i));
-      i++;
-    };
-
-
-
-
-
-
-
-    console.log(event.target,'это объект по которому был click')
-    const clickedELement  = event.target;
+      const clickedELement  = event.target;
     
     const block = document.getElementById("canvasBlock");
     let canvas = document.createElement("canvas");
@@ -226,6 +212,22 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
     Spinner.classList.add('hidden');
     await viewer.renderAll();
 
+      console.log('Новый рендер')
+     }
+      console.log('clicked number was',i);
+    }
+      console.log(carouselImages.item(i));
+      i++;
+    };
+
+
+
+
+
+
+
+    console.log(event.target,'это объект по которому был click')
+    
 
   
   });

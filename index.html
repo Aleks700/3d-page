@@ -220,9 +220,11 @@
                 <form  class="d-flex flex-column"  id="formElem">
                     <label for="name">Your name</label>
                     <input type="text" name="name" class="inputBorder" value="">
-                    <label for="email">Your email <span class="require"> * </span></label>
+                    <label for="email">Your email <span class="red"> *</span></label>
                     <input type="text" name="email" class="inputBorder" value="" required>
+                    <span class="red" id="validEmail">invalid email</span>
                     <label for="message" class="my-3">Message</label>
+                    
                     <textarea name="message" class="mb-3 inputBorder"  value="" ></textarea>
                     <button  type="submit">Send</button>
                 </form>

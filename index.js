@@ -119,7 +119,21 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
   Spinner.classList.add('hidden');
   await viewer.renderAll();
   
+const emailInput=document.querySelector('input[name="email"]');
+emailInput.addEventListener('focusout',(e)=>{
+  const y = document.getElementById('validEmail');
+  const btn = document.querySelector('button[type=submit]');
+  const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if(!emailInput.value.match(validRegex)){
+    y.style.display='block';
+    btn.disabled = true;
+  }else{
+    y.style.display = 'none';
+    btn.disabled = false;
+  }
+  console.log(e.target.value);
 
+})
 
 
 
@@ -132,7 +146,7 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
    
 
     try{
-      let response = await fetch('https://olympeducation.kz/mail1fff.php',{
+      let response = await fetch('https://olympeducation.kz/mail.php',{
         mode: 'no-cors',
         method: 'POST',
         body:  data

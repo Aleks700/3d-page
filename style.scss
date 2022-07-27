@@ -447,9 +447,9 @@ font-size: 1.5rem;
     }
     // margin-bottom: 2rem;
  
-    input[name="email"]{
-      color:aliceblue;
-    };
+    // input[name="email"]{
+    //   color:red;
+    // };
     h1{
         font-size: 3.5rem;
         font-family: "Eurostyle MN";
@@ -529,6 +529,10 @@ footer{
   }
 }
 
-.require{
+.red{
   color: red;
+}
+
+#validEmail{
+  display: none;
 }

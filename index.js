@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 const formButton = document.getElementById('formButton');
 formButton.addEventListener('click',()=>{
   console.log('try work');
-  document.location='#GetInTouch';
+  // document.location='#GetInTouch';
   const form  = document.getElementById('formElem');
   // const child = form.querySelector('input');
   form.querySelector('input').focus();

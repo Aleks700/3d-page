@@ -194,6 +194,11 @@ header {
 
 
 .secondSection {
+  .canvasContainer{
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 
   .Note{
     background-color: black;
@@ -232,7 +237,7 @@ header {
     .canvasBlock{
         position: relative;
         border: 3px solid black;
-        min-height: 30vh;
+        // min-height: 30vh;
         padding:0px;
     }
   h2 {

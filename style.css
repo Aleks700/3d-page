@@ -289,6 +289,11 @@ header .row {
   margin-bottom: 20px;
 }
 
+.secondSection .canvasContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .secondSection .Note {
   background-color: black;
   color: white;
@@ -336,7 +341,6 @@ header .row {
 .secondSection .canvasBlock {
   position: relative;
   border: 3px solid black;
-  min-height: 30vh;
   padding: 0px;
 }
 

@@ -112,8 +112,7 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
   }
 
   let buf = await resp.arrayBuffer();
-  console.log(resp.arrayBuffer.length);
-  console.log(buf);
+
   
   await viewer.loadFmBuffer(buf);
 
@@ -128,33 +127,46 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
   form.addEventListener('submit',async (e)=>{
     e.preventDefault();
     const data = new FormData(formElem);
-        
-
-  
-    console.log('Event was prevent defaulted');
     const inputs = document.querySelectorAll('input');
     const textarea = document.querySelector('textarea');
-    console.log(inputs,'name');
-    console.log(inputs[0].value);
-    console.log(inputs[1].value);
-    console.log(textarea.value);
+   
 
-    let response = await fetch('https://olympeducation.kz/mail.php',{
-      mode: 'no-cors',
-      method: 'POST',
-      body:  data
-    });
+    try{
+      let response = await fetch('https://olympeducation.kz/mail1fff.php',{
+        mode: 'no-cors',
+        method: 'POST',
+        body:  data
+      });
+     if(!response.ok){
+      throw new Error;
+     }
+      console.log('block to try');
+      document.querySelectorAll('input')[0].value='';
+      document.querySelectorAll('input')[1].value='';
+      document.querySelector('textarea').value='';
+      const p = document.getElementById('alert')
+      p.classList.add('animation');
+      setTimeout(()=>{
+        p.classList.remove('animation');
+      },3000)
+        } catch(e){
+         
+        const p = document.getElementById('ErrorAlert');
+        p.classList.add('animation');
+        setTimeout(()=>{
+          p.classList.remove('animation');
+        },3000)   
+    }
+
+    // let response = await fetch('https://olympeducation.kz/mail.php',{
+    //   mode: 'no-cors',
+    //   method: 'POST',
+    //   body:  data
+    // });
     
 
   
-    document.querySelectorAll('input')[0].value='';
-    document.querySelectorAll('input')[1].value='';
-    document.querySelector('textarea').value='';
-    const p = document.getElementById('alert')
-    p.classList.add('animation');
-    setTimeout(()=>{
-      p.classList.remove('animation');
-    },3000)
+
   });
 
 
@@ -173,10 +185,9 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
     Spinner.classList.remove('hidden');
 
 
-    console.log(carousel.childNodes);
+
     const carouselImages = carousel.children
-    console.log(carouselImages.item(1));
-    console.log(carouselImages,'carouselImages');
+
     let i = 0;
     while (i < carouselImages.length){
   
@@ -185,7 +196,7 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
     if(carouselImages.item(i)==event.target||carouselImages.item(i).children[0]==event.target){
       carouselImages.item(i).classList.add('blackBorder');
      if(RenderedItem==i){
-      console.log('Уже отрендерено');
+      
       Spinner.classList.add('hidden');
      }else{
       RenderedItem = i;
@@ -212,11 +223,11 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
     Spinner.classList.add('hidden');
     await viewer.renderAll();
 
-      console.log('Новый рендер')
+
      }
-      console.log('clicked number was',i);
+  
     }
-      console.log(carouselImages.item(i));
+
       i++;
     };
 
@@ -226,8 +237,7 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
 
 
 
-    console.log(event.target,'это объект по которому был click')
-    
+
 
   
   });

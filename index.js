@@ -131,7 +131,7 @@ emailInput.addEventListener('focusout',(e)=>{
     y.style.display = 'none';
     btn.disabled = false;
   }
-  console.log(e.target.value);
+
 
 })
 
@@ -151,9 +151,12 @@ emailInput.addEventListener('focusout',(e)=>{
         method: 'POST',
         body:  data
       });
+      console.log('')
+      console.log('started test',response.ok);
      if(!response.ok){
       throw new Error;
      }
+     console.log('ended test')
       console.log('block to try');
       document.querySelectorAll('input')[0].value='';
       document.querySelectorAll('input')[1].value='';
@@ -227,7 +230,7 @@ emailInput.addEventListener('focusout',(e)=>{
 
     let resp = await fetch("/scan/" + SCANS[RenderedItem].file);
     if (!resp.ok) {
-      throw "failed to fetch a model ";
+      throw "failed to fetch a model";
     }
 
     let buf = await resp.arrayBuffer();

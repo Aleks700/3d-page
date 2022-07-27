@@ -1,72 +1,59 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'Eurostyle MN';
+  font-family: "Eurostyle MN";
   src: url("./fonts/eurostile-mn-extended-bold.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro-Black';
+  font-family: "CeraPro-Black";
   src: url("./fonts/CeraPro-Black.ttf");
 }
-
 @font-face {
-  font-family: 'Codec Pro';
+  font-family: "Codec Pro";
   src: url("./fonts/FontsFree-Net-CodecPro-Regular.ttf");
 }
-
 @font-face {
-  font-family: 'Codec Pro Bold';
+  font-family: "Codec Pro Bold";
   src: url("./fonts/CodecPro-Bold.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro Black';
+  font-family: "CeraPro Black";
   src: url("./fonts/CeraPro-Black.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro Bold';
+  font-family: "CeraPro Bold";
   src: url("./fonts/CeraPro-Bold.ttf");
 }
-
 @font-face {
-  font-family: 'CeraPro Medium';
+  font-family: "CeraPro Medium";
   src: url("./fonts/CeraPro-Medium.ttf");
 }
-
 @font-face {
-  font-family: 'GoshaSans Bold';
+  font-family: "GoshaSans Bold";
   src: url("./fonts/GoshaSans-Bold.ttf");
 }
-
 @font-face {
-  font-family: 'GoshaSans Regular';
+  font-family: "GoshaSans Regular";
   src: url("./fonts/GoshaSans-Regular.ttf");
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("./fonts/Montserrat-Regular.ttf");
 }
-
 @media (max-width: 767px) {
   .main-nav {
     display: none !important;
   }
 }
-
 @media (min-width: 1024px) {
   .main-nav {
     margin-left: 20vw;
   }
 }
-
 .main-nav a {
   font-family: "Eurostyle MN";
   color: black;
@@ -91,7 +78,6 @@
     top: 0vh;
   }
 }
-
 @-webkit-keyframes slideUp {
   0% {
     top: 0vh;
@@ -100,7 +86,6 @@
     top: -100vh;
   }
 }
-
 @keyframes slideUp {
   0% {
     top: 0vh;
@@ -109,7 +94,6 @@
     top: -100vh;
   }
 }
-
 .slideDown {
   -webkit-animation: slideDown;
           animation: slideDown;
@@ -136,7 +120,6 @@ header {
   margin-top: 1vh;
   margin-bottom: 5vh;
 }
-
 header .row {
   position: relative;
 }
@@ -148,26 +131,17 @@ header .row {
 .link {
   border-bottom: 3px solid #7094fe;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   min-height: 3rem;
 }
-
 .link p {
   margin-bottom: 0px;
   font-size: 2rem;
 }
 
 .toggle-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 100;
   width: 100vw;
@@ -176,13 +150,11 @@ header .row {
   top: -200vh;
   font-size: 2rem;
 }
-
 .toggle-nav .close-btn {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-left: auto;
   margin-right: 2rem;
 }
-
 .toggle-nav a {
   color: white;
   font-family: "Eurostyle MN";
@@ -192,10 +164,9 @@ header .row {
 
 .burger {
   position: absolute;
-  right: 2rem;
+  right: 0.4rem;
   display: none;
 }
-
 @media (max-width: 767px) {
   .burger {
     display: block;
@@ -208,21 +179,25 @@ header .row {
 
 .firstSection {
   text-align: center;
-  background-color: #ecf1ff;
+  background-color: rgb(236, 241, 255);
   padding-top: 50px;
   padding-bottom: 50px;
   border-top-left-radius: 70% 10%;
   border-top-right-radius: 70% 10%;
   border-bottom-left-radius: 70% 10%;
   border-bottom-right-radius: 70% 10%;
-  margin-bottom: 140px;
+  margin-bottom: 20px;
 }
-
+@media (min-width: 768px) {
+  .firstSection {
+    margin-bottom: 140px;
+  }
+}
 .firstSection button {
   margin-top: 2rem;
   border-width: 3px;
-  border-color: #ecf1ff;
-  color: #ecf1ff;
+  border-color: rgb(236, 241, 255);
+  color: rgb(236, 241, 255);
   background-color: black;
   font-size: 1.4rem;
   font-family: "Eurostyle MN";
@@ -230,23 +205,19 @@ header .row {
   min-height: 4rem;
   min-width: 250px;
 }
-
 .firstSection button a {
   text-decoration: none;
 }
-
 .firstSection h1 {
   font-family: "Eurostyle MN";
-  color: #7094fe;
+  color: rgb(112, 148, 254);
   font-size: 4.8rem;
 }
-
 @media (max-width: 479px) {
   .firstSection h1 {
     font-size: 3rem;
   }
 }
-
 .firstSection p {
   font-size: 1.7rem;
   color: white;
@@ -265,54 +236,48 @@ header .row {
 
 @-webkit-keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 .secondSection {
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 
 .secondSection .canvasContainer {
   margin-left: auto;
   margin-right: auto;
 }
 
+=======
+>>>>>>> 8d42d60ac3397b2501c86759c85deff763754bad
 .secondSection .Note {
   background-color: black;
   color: white;
 }
-
 @media (max-width: 479px) {
   .secondSection .Note {
     font-size: 0.7rem;
   }
 }
-
 .secondSection .blackBorder {
   border: 1px solid black;
 }
-
 .secondSection .spinner {
   position: absolute;
 }
-
 .secondSection .spinner img {
   -webkit-animation: spinner;
           animation: spinner;
@@ -324,36 +289,29 @@ header .row {
           animation-timing-function: ease-in-out;
   width: 100px;
 }
-
 .secondSection .hidden {
   visibility: hidden;
 }
-
 .secondSection .carousel {
   background-color: rgba(142, 172, 255, 0.12);
 }
-
 .secondSection .carousel div {
   min-width: 4rem;
   max-width: 5rem;
 }
-
 .secondSection .canvasBlock {
   position: relative;
   border: 3px solid black;
   padding: 0px;
 }
-
 .secondSection h2 {
   font-size: 2.8rem;
   font-family: "Eurostyle MN";
 }
-
 .secondSection p {
   font-size: 1.3rem;
   font-family: "Codec Pro";
 }
-
 @media (min-width: 768px) {
   .secondSection {
     margin-bottom: 140px;
@@ -363,22 +321,18 @@ header .row {
 .thirdSection {
   margin-bottom: 20px;
 }
-
 .thirdSection h2 {
   font-family: "Eurostyle MN";
   font-size: 2.8rem;
 }
-
 .thirdSection p {
   font-family: "Codec Pro Bold";
   font-size: 1.3rem;
 }
-
 .thirdSection h3 {
   font-family: "Eurostyle MN";
   font-size: 1.3rem;
 }
-
 @media (min-width: 768px) {
   .thirdSection {
     margin-bottom: 140px;
@@ -388,34 +342,28 @@ header .row {
 .fourSection {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #ecf1ff;
+  background-color: rgb(236, 241, 255);
   margin-bottom: 20px;
 }
-
 .fourSection img {
   margin-bottom: 2vh;
 }
-
 .fourSection .logoBlock {
   text-align: center;
 }
-
 .fourSection h2 {
   font-family: "Eurostyle MN";
   font-size: 3rem;
   margin-bottom: 3.5rem;
 }
-
 .fourSection h3 {
   font-family: "Eurostyle MN";
   font-size: 1.4rem;
 }
-
 .fourSection p {
   font-family: "Codec Pro";
   font-size: 1.1rem;
 }
-
 @media (min-width: 768px) {
   .fourSection {
     margin-bottom: 140px;
@@ -425,36 +373,31 @@ header .row {
 @media (min-width: 767px) {
   .fiveSection .imageBlock {
     min-height: 450px;
-    background-color: #ecf1ff;
+    background-color: rgb(236, 241, 255);
     margin-bottom: 4rem;
   }
 }
-
 @media (min-width: 767px) {
   .fiveSection .textBlock {
     min-height: 500px;
-    background-color: #8eacff;
+    background-color: rgb(142, 172, 255);
     margin-bottom: 4rem;
   }
 }
-
 .fiveSection h1 {
   color: black;
   font-size: 5rem;
   font-family: "Eurostyle MN";
   margin-bottom: 0px;
 }
-
 .fiveSection h2 {
   font-family: "Eurostyle MN";
   font-size: 2.8rem;
 }
-
 .fiveSection h3 {
   font-family: "Eurostyle MN";
   font-size: 1.3rem;
 }
-
 .fiveSection p {
   font-family: "Codec Pro";
   font-size: 1.2rem;
@@ -467,7 +410,6 @@ header .row {
     max-width: 1200px;
   }
 }
-
 @media (max-width: 479px) {
   .container {
     margin-left: auto;
@@ -475,7 +417,6 @@ header .row {
     width: 90vw;
   }
 }
-
 @-webkit-keyframes example {
   0% {
     visibility: visible;
@@ -488,7 +429,6 @@ header .row {
     visibility: hidden;
   }
 }
-
 @keyframes example {
   0% {
     visibility: visible;
@@ -501,7 +441,6 @@ header .row {
     visibility: hidden;
   }
 }
-
 .baloon {
   visibility: visible;
   position: fixed;
@@ -515,7 +454,6 @@ header .row {
   color: white;
   border-radius: 5px;
 }
-
 .baloon p {
   margin-bottom: 0px;
 }
@@ -535,57 +473,54 @@ header .row {
   border-top-left-radius: 70% 10%;
   border-top-right-radius: 70% 10%;
 }
-
+@media (min-width: 767px) {
+  .sixSection {
+    padding-bottom: 1rem;
+  }
+}
 .sixSection h1 {
   font-size: 3.5rem;
   font-family: "Eurostyle MN";
-  color: #8eacff;
+  color: rgb(142, 172, 255);
   line-height: 1;
 }
-
 @media (max-width: 479px) {
   .sixSection h1 {
     font-size: 2.8rem;
   }
 }
-
 .sixSection p {
   font-size: 1.4rem;
-  color: white;
-  font-family: 'Codec Pro';
+  color: rgb(255, 255, 255);
+  font-family: "Codec Pro";
 }
-
 .sixSection input {
   padding-left: 0.5rem;
   margin-bottom: 1vh;
   background-color: black;
   border: none;
-  border-bottom: #8eacff solid 3px;
+  border-bottom: rgb(142, 172, 255) solid 3px;
   color: aliceblue;
 }
-
 .sixSection textarea {
   padding-left: 0.5rem;
   min-height: 5rem;
   color: aliceblue;
   margin-bottom: 1vh;
   background-color: black;
-  border: #8eacff solid 3px;
+  border: rgb(142, 172, 255) solid 3px;
 }
-
 .sixSection .inputBorder:focus {
   outline: none;
 }
-
 .sixSection label {
-  color: #ecf1ff;
-  font-family: 'Montserrat';
+  color: rgb(236, 241, 255);
+  font-family: "Montserrat";
 }
-
 .sixSection button {
   border: none;
-  background-color: #8eacff;
-  font-family: 'Eurostile MN';
+  background-color: rgb(142, 172, 255);
+  font-family: "Eurostile MN";
   font-size: 1.5rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -595,8 +530,7 @@ canvas {
   background-color: lightblue;
   width: 100% !important;
   height: 100% !important;
-  -ms-touch-action: none;
-      touch-action: none;
+  touch-action: none;
 }
 
 @media (max-width: 479px) {
@@ -604,18 +538,13 @@ canvas {
     font-size: 2rem !important;
   }
 }
-
 footer {
   height: 4rem;
-  background-color: #8eacff;
+  background-color: rgb(142, 172, 255);
 }
-
 @media screen and (max-width: 767px) {
   footer {
     height: 6rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

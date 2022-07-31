@@ -28,7 +28,7 @@ const SCANS = [
 // document.body.style.overflow = "hidden";
 
 
-document.addEventListener("DOMContentLoaded", async (event) => {
+document.addEventListener("DOMContentLoaded", async  (event) => {
 
 
 
@@ -107,6 +107,7 @@ document.getElementById('canvasBlock').addEventListener('mouseout',()=>{
   let viewer = fmViewer.Viewer.create(canvas);
 
   let resp = await fetch("/scan/" + SCANS[0].file);
+ 
   if (!resp.ok) {
     throw "failed to fetch a model ";
   }
@@ -145,35 +146,87 @@ emailInput.addEventListener('focusout',(e)=>{
     const textarea = document.querySelector('textarea');
    
 
-    try{
-      let response = await fetch('https://olympeducation.kz/mail.php',{
-        mode: 'no-cors',
-        method: 'POST',
-        body:  data
-      });
-      console.log('')
-      console.log('started test',response.ok);
-     if(!response.ok){
-      throw new Error;
-     }
-     console.log('ended test')
-      console.log('block to try');
-      document.querySelectorAll('input')[0].value='';
-      document.querySelectorAll('input')[1].value='';
-      document.querySelector('textarea').value='';
-      const p = document.getElementById('alert')
-      p.classList.add('animation');
-      setTimeout(()=>{
-        p.classList.remove('animation');
-      },3000)
-        } catch(e){
-         
-        const p = document.getElementById('ErrorAlert');
+ 
+       
+        let response = await fetch('https://olympeducation.kz/mail.php',{
+          mode: 'no-cors',
+          method: 'POST',
+          body:  data
+        });
+
+
+        // let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+
+        console.log(response);
+        const statu= await response.ok;
+        console.log(statu,'it was status code');
+        console.log(response.ok);
+        console.log('started test',response.ok);
+       if(response.ok===false){
+        throw new Error;
+       }
+       console.log('ended test')
+        console.log('block to try');
+        document.querySelectorAll('input')[0].value='';
+        document.querySelectorAll('input')[1].value='';
+        document.querySelector('textarea').value='';
+        const p = document.getElementById('alert')
         p.classList.add('animation');
         setTimeout(()=>{
           p.classList.remove('animation');
-        },3000)   
-    }
+        },3000)
+     
+     
+    //   let response = await fetch('https://olympeducation.kz/mail.php',{
+    //     mode: 'no-cors',
+    //     method: 'POST',
+    //     body:  data
+    //   });
+    //   console.log(response);
+    //   console.log(Status,'it was status code');
+    //   console.log(response.ok);
+    //   console.log('started test',response.ok);
+    //  if(response.ok===false){
+    //   throw new Error;
+    //  }
+    // //  console.log('ended test')
+    // //   console.log('block to try');
+    //   document.querySelectorAll('input')[0].value='';
+    //   document.querySelectorAll('input')[1].value='';
+    //   document.querySelector('textarea').value='';
+    //   const p = document.getElementById('alert')
+    //   p.classList.add('animation');
+    //   setTimeout(()=>{
+    //     p.classList.remove('animation');
+    //   },3000)
+     
+         
+
+
+
+
+
+
+
+// /block to
+
+        // const p = document.getElementById('ErrorAlert');
+        // p.classList.add('animation');
+        // setTimeout(()=>{
+        //   p.classList.remove('animation');
+        // },3000)   
+  
+
+
+
+
+
+
+
+
+
+
+
 
     // let response = await fetch('https://olympeducation.kz/mail.php',{
     //   mode: 'no-cors',

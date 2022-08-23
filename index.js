@@ -141,6 +141,7 @@ emailInput.addEventListener('change',(e)=>{
   const form = document.querySelector('form');
   form.addEventListener('submit',async (e)=>{
     e.preventDefault();
+    alert('started');
     const data = new FormData(formElem);
     const inputs = document.querySelectorAll('input');
     const textarea = document.querySelector('textarea');
@@ -149,20 +150,20 @@ emailInput.addEventListener('change',(e)=>{
 
 
     try{
-      let response = await fetch('https://olympeducation.kz/mail.php',{
+      let response = await fetch('https://academygenious.kz/mail.php',{
         method: 'POST',
         body:  data
       });
       // let response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
 
       console.log(response);
-      const statu = await response.ok;
+      const statu = await response.status;
       console.log(statu,'it was status code');
       console.log(response.ok);
       console.log('started test',response.ok);
-      if(response.ok===false){
+      if(statu!==200){
         throw new Error;
-       }
+      }
       document.querySelectorAll('input')[0].value='';
       document.querySelectorAll('input')[1].value='';
       document.querySelector('textarea').value='';
